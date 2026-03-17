@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Exercicio07 {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        double distancia, combustivel;
+
+        System.out.print("Distância percorrida (km): ");
+        distancia = scanner.nextDouble();
+
+        System.out.print("Combustível gasto (litros): ");
+        combustivel = scanner.nextDouble();
+
+        double consumo = distancia / combustivel;
+
+        System.out.println("Consumo médio: " + consumo + " km/l");
+
+        scanner.close();
+    }
+}
